@@ -12,6 +12,144 @@
   text-decoration: none;
   outline: none;
 }
+.container .banner_bcj {
+  width: 100%;
+  height: 3rem;
+  border-top: 3px solid rgba(138, 138, 138, 0.2);
+}
+.container .banner_bcj .bcj_left {
+  width: 2.7rem;
+  height: 2.6rem;
+  float: left;
+  line-height: 2.6rem;
+  padding: 0.16rem 0.1rem;
+}
+.container .banner_bcj .bcj_left img {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.container .banner_bcj .bcj_right {
+  height: 2.6rem;
+  overflow: hidden;
+  padding: 0.16rem 0.2rem;
+}
+.container .banner_bcj .bcj_right .bcj_name {
+  font-size: 0.28rem;
+}
+.container .banner_bcj .bcj_right .bcj_price {
+  margin-top: 0.2rem;
+}
+.container .banner_bcj .bcj_right .bcj_price .price {
+  color: red;
+  font-size: 0.32rem;
+}
+.container .banner_bcj .bcj_right .bcj_price .oldPrice {
+  text-decoration: line-through;
+  font-size: 0.24rem;
+}
+.container .banner_bcj .bcj_right .bcj_process {
+  margin-top: 0.4rem;
+  width: 1.68rem;
+  height: 0.28rem;
+  background-color: #ffb7b7;
+  border: 1px solid #fc353a;
+  border-left: 3px solid #fc353a;
+  border-radius: 0.14rem;
+  position: relative;
+}
+.container .banner_bcj .bcj_right .bcj_process .percent {
+  font-size: 0.24rem;
+  position: absolute;
+  top: -0.06rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+.container .banner_bcj .bcj_right .bcj_process .get_num {
+  font-size: 0.24rem;
+  color: #fc353a;
+  position: absolute;
+  top: -0.06rem;
+  right: -1.6rem;
+}
+.container .banner_bcj .bcj_right .bcj_discount_link {
+  margin-top: 0.2rem;
+}
+.container .banner_bcj .bcj_right .bcj_discount_link .discount p {
+  float: left;
+  color: #fc353a;
+  border: 1px dashed #fc353a;
+}
+.container .banner_bcj .bcj_right .bcj_discount_link .link {
+  float: right;
+}
+.container .banner_bcj .bcj_right .bcj_discount_link .link a {
+  display: block;
+  width: 1.16rem;
+  height: 0.56rem;
+  background-color: #ff5e5d;
+  color: #fff;
+  font-size: 0.24rem;
+  border-radius: 0.06rem;
+  text-align: center;
+  line-height: 0.46rem;
+}
+.container .mmb_footer {
+  position: absolute;
+  bottom: -2.4rem;
+  width: 100%;
+  height: 1.88rem;
+  margin-top: 0.4rem;
+  border-top: 1px solid #c4c4c4;
+  z-index: 999;
+}
+.container .mmb_footer .footer_top a {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-size: 0.28rem;
+  border-right: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.container .mmb_footer .footer_top a:last-child {
+  border-right: none;
+}
+.container .mmb_footer .footer_foot {
+  text-align: center;
+  width: 100%;
+  margin: 0.2rem;
+}
+.container .mmb_footer .footer_foot a:first-child {
+  color: red;
+  font-size: 0.28rem;
+}
+.container .mmb_footer .footer_foot a:nth-child(2) {
+  font-size: 0.28rem;
+}
+.container .mmb_footer .footer_foot a:last-child {
+  font-size: 0.24rem;
+}
+.container .mmb_footer .footer_foot p {
+  font-size: 0.28rem;
+}
+.container .gotop {
+  position: fixed;
+  right: 0.2rem;
+  bottom: 1.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+.container .gotop i {
+  display: block;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
 .mmb_header {
   width: 100%;
   height: 0.9rem;
@@ -90,61 +228,6 @@
 .hot_sale .mui-scroll-wrapper .mui-scroll .tabs li a.new {
   color: red;
   border-bottom: 4px solid red;
-}
-.brand_num {
-  width: 100%;
-  height: 0.7rem;
-  background-color: #ff9000;
-  background: linear-gradient(#ffaf47, #ff9000);
-  margin-top: 0.4rem;
-}
-.brand_num h4 {
-  color: #fff;
-  float: left;
-  font-size: 0.4rem;
-  margin: 0.12rem 0.3rem;
-}
-.brand_num img {
-  width: 0.6rem;
-  height: 30 / rem;
-  float: right;
-  margin: 0.06rem 0.3rem;
-}
-.mmb_footer {
-  width: 100%;
-  margin-top: 0.4rem;
-  border-top: 1px solid #c4c4c4;
-}
-.mmb_footer .footer_top a {
-  height: 0.6rem;
-  line-height: 0.6rem;
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  font-size: 0.28rem;
-  border-right: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
-}
-.mmb_footer .footer_top a:last-child {
-  border-right: none;
-}
-.mmb_footer .footer_foot {
-  text-align: center;
-  width: 100%;
-  margin: 0.2rem;
-}
-.mmb_footer .footer_foot a:first-child {
-  color: red;
-  font-size: 0.28rem;
-}
-.mmb_footer .footer_foot a:nth-child(2) {
-  font-size: 0.28rem;
-}
-.mmb_footer .footer_foot a:last-child {
-  font-size: 0.24rem;
-}
-.mmb_footer .footer_foot p {
-  font-size: 0.28rem;
 }
 /* 初始化 */
 body,

@@ -15,7 +15,7 @@
     <div class="mui-scroll">
       <!--这里放置真实显示的DOM内容-->
       <!--慢慢买头部-->
-      <div class="mmb_header">
+      <div class="mmb_header mui-clearfix">
         <div class="header_logo">
           <a href="javascript:history.go(-1)">
  <i class="fa fa-chevron-left "></i>
@@ -31,55 +31,80 @@
         </div>
       </div>
       <!--热销-->
-      <div class="hot_sale">
+      <div class="hot_sale mui-clearfix">
       <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted hot_sale_bor">
-        <div class="mui-scroll">
+        <div class="mui-scroll mui-clearfix">
         <ul class="tabs mui-clearfix" >
-          <li class="mui-control-item "><a href="baicaijia.html?titleid=0" class="new">全部</a></li>
-          <li class="mui-control-item "><a href="baicaijia.html?titleid=1">热销</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=2">9块邮</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=3">19块邮</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=4">数码家电</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=5">居家</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=6">美食</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=7">男装</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=8">女装</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=9">鞋包配饰</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=10">文体</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=11">母婴</a></li>
-          <li class="mui-control-item"><a href="baicaijia.html?titleid=12">美妆</a></li>
+          <!--动态渲染-->
         </ul>
          </div>
        </div>
-        <div class="nav_search">
+        <div class="nav_search mui-clearfix">
           <img src="images/searchIcon.png">
         </div>
       </div>
-      <!--底部-->
-      <div class="mmb_footer">
-        <div class="footer_top clearfix">
-          <a href="#">登录</a>
-          <a href="#">注册</a>
-          <a href="#">返回顶部</a>
-        </div>
-        <div class="footer_foot">
-          <a href="#">手机APP下载</a>
-          <a href="#">慢慢买手机版</a>
-          <a href="#">--掌上平价平台</a>
-          <p>m.manmanbuy.com  </p>
-        </div>
-
+      <!--banner部分-->
+      <div class="banner_bcj mui-clearfix">
+        <!--动态渲染-->
       </div>
 
     </div>
   </div>
+  <!--底部-->
+  <div class="mmb_footer">
+    <div class="footer_top ">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#">返回顶部</a>
+    </div>
+    <div class="footer_foot">
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上平价平台</a>
+      <p>m.manmanbuy.com  </p>
+    </div>
+  </div>
+  <div class="gotop">
 
+    <i class="fa fa-arrow-up"></i>
+
+  </div>
 </div>
 
 <script type="text/html" id="tpl">
-
+  {{each result v i}}
+  <li class="mui-control-item " data-titleId={{v.titleId}}>
+    <a href="baicaijia.html?titleid=0" class="{{i === 0?'new':''}}" >{{v.title}}
+    </a></li>
+  {{/each}}
 </script>
-
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <div class="bcj_left">
+    <a href="#">
+     {{#v.productImg}}
+    </a>
+  </div>
+  <div class="bcj_right mui-clearfix">
+    <div class="bcj_name">{{@v.productName}}</div>
+    <div class="bcj_price">
+      <span class="price">{{@v.productPrice}}</span>
+      <span class="oldPrice">&yen;99</span>
+    </div>
+    <div class="bcj_process">
+      <span class="percent mui">1%</span>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <span class="get_num">{{@v.productCouponRemain}}</span>
+    </div>
+    <div class="bcj_discount_link mui-clearfix">
+      <div class="discount"><p>{{@v.productCoupon}}</p></div>
+      <div class="link">
+        <a href="#">下单链接</a>
+      </div>
+    </div>
+</div>
+  {{/each}}
+</script>
 <script src="lib/jquery/jquery-1.12.4.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="lib/mui/js/mui.min.js"></script>

@@ -20,8 +20,18 @@
 }
 .mmb_footer {
   width: 100%;
+  height: 1.88rem;
   margin-top: 0.4rem;
   border-top: 1px solid #c4c4c4;
+}
+.mmb_footer .fixed_left {
+  position: fixed;
+  rigth: 0.2rem;
+  bottom: 0.4rem;
+}
+.mmb_footer .fixed_left img {
+  width: 1.2rem;
+  height: 1.34rem;
 }
 .mmb_footer .footer_top a {
   height: 0.6rem;

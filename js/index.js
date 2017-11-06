@@ -12,6 +12,16 @@ $(function () {
     }else{
       $(".nav_hide").hide(1000);
     }});
+  // 上半部分导航
+  // $.ajax({
+  //   type:"get",
+  //   url:"http://192.168.32.87:9090/api/getindexmenu",
+  //   dataType:"json",
+  //   success:function (data) {
+  //     console.log(data);
+  //   }
+  // })
+  // 下半部分导航
   $.ajax({
     type:"get",
     url:"http://192.168.32.87:9090/api/getmoneyctrl",
