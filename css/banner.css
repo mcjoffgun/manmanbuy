@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.mmb_banner {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.mmb_banner .banner_left {
+  float: left;
+  height: 2rem;
+}
+.mmb_banner .banner_left img {
+  width: 2rem;
+  height: 2rem;
+}
+.mmb_banner .banner_right {
+  overflow: hidden;
+  padding-left: 0.2rem;
+  height: 2rem;
+}
+.mmb_banner .banner_right .title .double_one {
+  font-size: 0.32rem;
+}
+.mmb_banner .banner_right .title .red_money {
+  color: #ff6c00;
+  font-size: 0.28rem;
+}
+.mmb_banner .banner_right .date_comment {
+  color: #a1a1a1;
+  margin-top: 0.8rem;
+}
+.mmb_banner .banner_right .date_comment .date,
+.mmb_banner .banner_right .date_comment .comment {
+  float: left;
+}
+.mmb_banner .banner_right .date_comment .comment {
+  float: right;
+}
+.more_cheap {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.more_cheap a {
+  display: block;
+  line-height: 0.6rem;
+  background-color: #F4F4F4;
+  font-size: 0.28rem;
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+}

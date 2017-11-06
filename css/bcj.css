@@ -1,0 +1,268 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.container a:hover,
+.container a:visited,
+.container a:focus,
+.container a:link {
+  text-decoration: none;
+  outline: none;
+}
+.mmb_header {
+  width: 100%;
+  height: 0.9rem;
+  background-color: #f4483e;
+  position: relative;
+}
+.mmb_header .header_logo,
+.mmb_header .header_app {
+  position: absolute;
+  width: 1rem;
+  height: 0.9rem;
+}
+.mmb_header .header_logo {
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.mmb_header .header_logo a {
+  display: block;
+  color: #fff;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 0.9rem;
+  font-weight: 100;
+}
+.mmb_header .header_app {
+  top: 0;
+  right: 0;
+}
+.mmb_header .header_app img {
+  width: 1rem;
+  height: 0.9rem;
+}
+.mmb_header .bcj_title {
+  height: 100%;
+  margin: 0 1rem;
+}
+.mmb_header .bcj_title h4 {
+  font-size: 0.4rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.9rem;
+  color: #fff;
+}
+.hot_sale {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #fff;
+  position: relative;
+}
+.hot_sale ul {
+  float: left;
+}
+.hot_sale ul li {
+  margin: 0 auto;
+}
+.hot_sale ul a {
+  display: block;
+  color: #333;
+  text-align: center;
+  font-size: 0.28rem;
+  border-bottom: 4px solid transparent;
+}
+.hot_sale .nav_search {
+  width: 0.76rem;
+  height: 0.76rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 1px solid #ccc;
+}
+.hot_sale .nav_search img {
+  width: 0.76rem;
+  height: 0.76rem;
+}
+.hot_sale .mui-scroll-wrapper .mui-scroll .tabs li a.new {
+  color: red;
+  border-bottom: 4px solid red;
+}
+.brand_num {
+  width: 100%;
+  height: 0.7rem;
+  background-color: #ff9000;
+  background: linear-gradient(#ffaf47, #ff9000);
+  margin-top: 0.4rem;
+}
+.brand_num h4 {
+  color: #fff;
+  float: left;
+  font-size: 0.4rem;
+  margin: 0.12rem 0.3rem;
+}
+.brand_num img {
+  width: 0.6rem;
+  height: 30 / rem;
+  float: right;
+  margin: 0.06rem 0.3rem;
+}
+.mmb_footer {
+  width: 100%;
+  margin-top: 0.4rem;
+  border-top: 1px solid #c4c4c4;
+}
+.mmb_footer .footer_top a {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-size: 0.28rem;
+  border-right: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.mmb_footer .footer_top a:last-child {
+  border-right: none;
+}
+.mmb_footer .footer_foot {
+  text-align: center;
+  width: 100%;
+  margin: 0.2rem;
+}
+.mmb_footer .footer_foot a:first-child {
+  color: red;
+  font-size: 0.28rem;
+}
+.mmb_footer .footer_foot a:nth-child(2) {
+  font-size: 0.28rem;
+}
+.mmb_footer .footer_foot a:last-child {
+  font-size: 0.24rem;
+}
+.mmb_footer .footer_foot p {
+  font-size: 0.28rem;
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+/*去除边框*/
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: none;
+  outline-style: none;
+}
+/*禁止表单域缩放*/
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  /* 取消链接高亮  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  /*解决图片底部对其问题*/
+  display: block;
+  border: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+em,
+i {
+  font-style: normal;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+}

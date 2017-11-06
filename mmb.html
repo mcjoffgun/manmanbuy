@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>慢慢买手机版</title>
+  <link  rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel = "stylesheet" href="css/total.css">
+</head>
+<body>
+<div class="container">
+  <div class="mui-scroll-wrapper">
+    <div class="mui-scroll">
+      <!--这里放置真实显示的DOM内容-->
+      <!--慢慢买头部-->
+      <div class="mmb_header">
+        <div class="header_logo">
+          <a href="#">
+            <img src="images/header_logo.png">
+          </a>
+        </div>
+        <div class="header_app">
+          <a href="#">
+            <img src="images/header_app.png">
+          </a>
+        </div>
+      </div>
+      <!--搜索框-->
+      <div class="mmb_search">
+        <input type="text" name="" id="" placeholder="请输入你想要比价的商品" class="search">
+        <input type="submit" value="搜索" class="second_search">
+      </div>
+      <!--nav导航-->
+      <div class="mmb_nav">
+        <ul class="first_nav clearfix">
+          <li>
+            <a href="#">
+              <img src="images/ic_search.png">
+              <p>比价搜索</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/ic_cu.png">
+              <p>省钱控</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/ic_coudanpin.png">
+              <p>国内折扣</p>
+            </a>
+          </li>
+          <li>
+            <a href="bcj.html">
+              <img src="images/ic_bcj.png">
+              <p>白菜价</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/ic_temai.png">
+              <p>小时风云榜</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/ic_trend.png">
+              <p>查历史价</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/ic_pp.png">
+              <p>品牌大全</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="more_click">
+              <img src="images/gengduo.png">
+              <p>更多</p>
+            </a>
+          </li>
+          <!--默认隐藏，当点击时显示-->
+          <li class="nav_hide"><a href="#"><img src="images/ic_temai.png"><p>优惠券</p></a></li>
+          <li class="nav_hide"><a href="#"><img src="images/ic_kb.png"><p>口碑</p></a></li>
+          <li class="nav_hide"><a href="#"><img src="images/ic_coudanpin.png"><p>凑单品</p></a></li>
+          <li class="nav_hide"><a href="#"><img src="images/ic_mall.png"><p>商城导航</p></a></li>
+        </ul>
+      </div>
+      <!--折扣推荐-->
+      <div class="zk_tj clearfix">
+        <a href="">
+          <h4>超值折扣推荐</h4>
+          <img src="images/ic_cu.png">
+        </a>
+      </div>
+      <!--baner列表-->
+      <div class="mmb_banner clearfix ">
+        </div>
+      <!--更多优惠信息-->
+      <div class="more_cheap">
+        <a href="#">更多优惠信息 &gt;&gt;</a>
+      </div>
+      <!--品牌排行-->
+      <div class="brand_num">
+        <a href="">
+          <h4>品牌排行</h4>
+          <img src="images/ic_coudanpin.png">
+        </a>
+      </div>
+      <!--底部-->
+      <div class="mmb_footer">
+        <div class="footer_top clearfix">
+          <a href="#">登录</a>
+          <a href="#">注册</a>
+          <a href="#">返回顶部</a>
+        </div>
+        <div class="footer_foot">
+          <a href="#">手机APP下载</a>
+          <a href="#">慢慢买手机版</a>
+          <a href="#">--掌上平价平台</a>
+          <p>m.manmanbuy.com  </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="fixed_rigth ">
+    <a href="#">
+      <img src="images/fixed.png" class="pic_fixed">
+    </a>
+    <a href="mmb.html">
+      <img src="images/back-to-top.png" class="back-to-top">
+    </a>
+  </div>
+</div>
+
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <div class="banner_left">
+    {{@v.productImgSm}}
+  </div>
+  <div class="banner_right">
+    <div class="title txt-cut">
+      <span class="double_one">{{v.productName}}</span>
+      <span class="red_money">{{v.productPinkage}}</span>
+    </div>
+    <div class="date_comment clearfix">
+      <div class="date">
+        <span>{{v.productFrom}}</span>
+        <span>{{v.productTime}}</span>
+      </div>
+      <div class="comment">
+        <i class="fa fa-comment-o"></i>
+        <sapn>{{v.productComCount}}</sapn>
+      </div>
+    </div>
+  </div>
+
+  {{/each}}
+</script>
+
+<script src="lib/jquery/jquery-1.12.4.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/lib-flexible/build/flexible_css.js"></script>
+<script src="lib/lib-flexible/src/flexible.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
