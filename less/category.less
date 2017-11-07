@@ -60,7 +60,7 @@
         border-bottom: 1px solid #ccc;
         border-top: 1px solid #ccc;
         >.first_title{
-          width: 100%;
+
           display: block;
           font-size: 14/50rem;
           font-weight: 700;
@@ -95,7 +95,95 @@
       }
     }
 
-  }
+  };
+  .banner_page{
+    width: 100%;
+    height: 150/50rem;
+    //background-color:linen;
+    border-top: 3px solid rgba(138,138,138,0.2);
+    .bcj_left{
+      width: 135/50rem;
+      height: 130/50rem;
+      float: left;
+      line-height: 130/50rem;
+      padding:8/50rem 5/50rem;
+      img{
+        width: 130/50rem;
+        height: 130/50rem;
+      }
+    }
+    .bcj_right{
+      height: 130/50rem;
+      overflow: hidden;
+      //background-color: lightblue;
+      padding:8/50rem 10/50rem;
+      .bcj_name{
+        font-size: 14/50rem;
+      };
+      .bcj_price{
+        margin-top:10rem/50;
+        .price{
+          color: red;
+          font-size: 16/50rem;
+        }
+        .oldPrice{
+          text-decoration: line-through;
+          font-size: 12/50rem;
+        }
+      };
+      .bcj_process{
+        margin-top: 20/50rem;
+        width:84/50rem;
+        height:14/50rem;
+        background-color: #ffb7b7;
+        border:1px solid #fc353a;
+        border-left:3px solid #fc353a;
+        border-radius: 7/50rem;
+        position: relative;
+        .percent{
+          font-size: 12/50rem;
+          position: absolute;
+          top:-3/50rem;;
+          left:50%;
+          transform: translateX(-50%);
+          color: #fff;
+        }
+        .get_num {
+          font-size: 12/50rem;
+          color: #fc353a;
+          position: absolute;
+          top:-3/50rem;
+          right:-80/50rem;
+        }
+      };
+      .bcj_discount_link{
+        margin-top: 10/50rem;
+        .discount{
+
+          p{
+            float: left;
+            color:#fc353a;
+            border:1px dashed #fc353a;
+
+          }
+        }
+        .link{
+          float: right;
+          a{
+            display: block;
+            width:58/50rem;
+            height: 28/50rem;
+            background-color: #ff5e5d;
+            color: #fff;
+            font-size: 12/50rem;
+            border-radius: 3/50rem;
+            text-align: center;
+            line-height: 23/50rem;
+          }
+        }
+      }
+    }
+  };
 }
 @import "header";
 @import "search";

@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>慢慢买分类页</title>
-  <link  rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
-  <link rel = "stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/productList.css">
 </head>
 <body>
 <div class="container">
@@ -32,13 +32,31 @@
         <input type="text" name="" id="" placeholder="请输入你想要比价的商品" class="search">
         <input type="submit" value="搜索" class="second_search">
       </div>
-      <!--nav导航-->
-      <div class="mmb_nav">
+      <!--导航-->
+      <div class="mmb_nav mui-clearfix">
+        <!--动态渲染-->
+      </div>
+      <!--详细列表-->
+      <div class="product_list">
+        <!--动态渲染-->
+      </div>
 
+      <div class="pagenation mui-clearfix">
+  <span class="prev_page">
+   <a href="#">上一页</a>
+    </span>
+  <span class="select_page">
+    <select class="page_option" id="page_option">
+     <!--动态渲染-->
+    </select>
+  </span>
+  <span class="next_page">
+     <a href="#">下一页</a>
+  </span>
       </div>
     </div>
   </div>
-  <!--底部-->
+
   <div class="mmb_footer">
     <div class="footer_top clearfix">
       <a href="#">登录</a>
@@ -49,34 +67,44 @@
       <a href="#">手机APP下载</a>
       <a href="#">慢慢买手机版</a>
       <a href="#">--掌上平价平台</a>
-      <p>m.manmanbuy.com  </p>
+      <p>m.manmanbuy.com </p>
     </div>
 
   </div>
 </div>
-
 <script type="text/html" id="tpl">
   {{each result v i}}
-  <ul class="mmb_title">
-    <li  class="first_list " >
-      <a href="#" class="first_title" data-titleid="{{v.titleId}}">{{v.title}}
-      <ul class="mmb_second_nav mui-clearfix hide" >
-
-      </ul>
-      </a>
-    </li>
-
-  </ul>
-
+  <a href="mmb.html">首页&gt;</a>
+  <a href="category.html">分类&gt;</a>
+  <a href="#">{{v.category}}&gt;</a>
+  <a href="#">筛选</a>
   {{/each}}
 </script>
-<script type="text/html" id="second_tpl">
+<script type="text/html" id="tpl1">
   {{each result v i}}
-
-    <li data-categoryid="{{v.categoryId}}">
-      <a href="productList.html?categoryid={{v.categoryId}}&amp;category={{v.category}}&amp;pageid=1" data-categoryId="{{v.categoryId}}">{{v.category}}</a>
-    </li>
+  <div class="banner_page mui-clearfix">
+    <a href="#">
+      <div class="pic_left">
+        <a href="#" class="pic_a">
+          {{@v.productImg}}
+        </a>
+      </div>
+      <div class="pic_right">
+        <div class="title mui-ellipsis-2">{{v.productName}}</div>
+        <p class="price">&yen;{{@v.productPrice}}</p>
+        <span class="bj">{{@v.productQuote}}</span>
+        <span class="commtent">{{@v.productCom}}</span>
+      </div>
+    </a>
+  </div>
   {{/each}}
+</script>
+<script type="text/html" id="tpl2">
+    <% for (var i = 1; i <= totalPage; i++) {%>
+    <option value="{{i}}" selected="{{pageid === 1?'selected':''}}">{{i}} / {{totalPage}} </option>
+    <%}%>
+
+
 </script>
 <script src="lib/jquery/jquery-1.12.4.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -85,6 +113,6 @@
 <script src="lib/lib-flexible/build/flexible_css.js"></script>
 <script src="lib/lib-flexible/src/flexible.js"></script>
 <script src="js/common.js"></script>
-<script src="js/category.js"></script>
+<script src="js/productList.js"></script>
 </body>
 </html>

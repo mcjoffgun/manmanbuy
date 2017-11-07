@@ -3,9 +3,11 @@ $(function () {
     deceleration: 0.0005,
     indicators: false, //是否显示滚动条
   });
+  var detail1 = "getbaicaijiatitle";
+  var detail2 = "getbaicaijiaproduct";
   $.ajax({
     type:"get",
-    url:"http://192.168.32.87:9090/api/getbaicaijiatitle",
+    url:address(detail1),
     dataType:"json",
     success:function (data) {
       // console.log(data);
@@ -18,7 +20,7 @@ $(function () {
     //二级分类，封装成一个函数来调用，发送ajax请求
     $.ajax({
       type:"get",
-      url:"http://192.168.32.87:9090/api/getbaicaijiaproduct",
+      url:address(detail2),
       dataType:"json",
       data:{
         titleid:id
