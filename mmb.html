@@ -42,7 +42,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="savemoney.html?pageid=1">
               <img src="images/ic_cu.png">
               <p>省钱控</p>
             </a>
@@ -138,12 +138,6 @@
     </a>
   </div>
 </div>
-<select class="page_option">
-  <option value="1" selected>1/4</option>
-  <option value="2">2/4</option>
-  <option value="3">3/4</option>
-  <option value="4">3/4</option>
-</select>
 <script type="text/html" id="tpl">
   {{each result v i}}
   <div class="banner_left">
@@ -161,14 +155,13 @@
       </div>
       <div class="comment">
         <i class="fa fa-comment-o"></i>
-        <sapn>{{v.productComCount}}</sapn>
+        <sapn>{{v.productComCount.slice(1,2)}}</sapn>
       </div>
     </div>
   </div>
 
   {{/each}}
 </script>
-
 <script src="lib/jquery/jquery-1.12.4.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="lib/mui/js/mui.min.js"></script>
