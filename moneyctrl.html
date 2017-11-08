@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>国内折扣详情页</title>
+  <title>慢慢买省钱页</title>
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/inlanddiscount.css">
+  <link rel="stylesheet" href="css/savemoney.css">
 </head>
 <body>
 <div class="container">
@@ -22,7 +22,7 @@
           </a>
         </div>
         <div class="bcj_title">
-          <h4>国内折扣</h4>
+          <h4>省钱控-最新优惠</h4>
         </div>
         <div class="header_app">
           <a href="#">
@@ -30,13 +30,28 @@
           </a>
         </div>
       </div>
-   <div class="inland_dis">
-     <ul>
-<!--d动态渲染-->
-     </ul>
-   </div>
+      <!--内容区域-->
+      <div class="save_money">
+        <ul>
+          <!--动态填充-->
+        </ul>
+      </div>
+      <!--分页-->
+      <div class="pagenation mui-clearfix">
+  <span class="prev_page">
+   <a href="#">上一页</a>
+    </span>
+  <span class="select_page">
+    <select class="page_option" id="page_option">
+     <!--动态渲染-->
+    </select>
+  </span>
+  <span class="next_page">
+     <a href="#">下一页</a>
+  </span>
       </div>
     </div>
+  </div>
   <!--底部-->
   <div class="mmb_footer">
     <div class="footer_top clearfix">
@@ -52,22 +67,44 @@
     </div>
 
   </div>
+
 </div>
 <script type="text/html" id="tpl">
   {{each result v i}}
-  <li class="border-img">
-    <a href="discount.html?productid={{v.productId}}" title="《皮囊》 19.9元">
-      <div class="img">
-       {{@v.productImg}}
+
+    <li class="money_ctr">
+      <a href="moneyproduct.html?productid={{v.productId}}" class="link_money">
+      <div class="save_detail">
+        <div class="pic_left">
+          <a href="#">
+            {{@v.productImgSm}}
+          </a>
+        </div>
+        <div class="title_right">
+          <div class="title_top">
+            <span claas="top_left">{{@v.productName}}</span>
+            <span class="top_right">{{@v.productPinkage}}</span>
+          </div>
+          <div class="title_bottom mui-clearfix">
+            <span class="bottom_left">{{@v.productFrom}}{{@v.productTime}}</span>
+                  <span class="bottom_right">
+                    <i class="fa fa-comment"></i>
+                    {{v.productComCount.slice(1,2)}}
+                  </span>
+
+          </div>
+        </div>
       </div>
-      <div class="title">{{v.productName}}</div>
-      <div class="subtit">{{v.productPrice}}</div>
-      <div class="info">
-        <div class="mall">{{v.productFrom}} | {{v.productTime}}</div>
-      </div>
-    </a>
-  </li>
+      </a>
+    </li>
+
   {{/each}}
+</script>
+<script type="text/html" id="tpl1">
+  <% for (var i = 1; i <= totalPage; i++){%>
+<option value="{{i}}" selected="{{pageid === 1?'selected':''}}">{{i}} / {{totalPage}}</option>
+  <%}%>
+
 </script>
 <script src="lib/jquery/jquery-1.12.4.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -76,6 +113,6 @@
 <script src="lib/lib-flexible/build/flexible_css.js"></script>
 <script src="lib/lib-flexible/src/flexible.js"></script>
 <script src="js/common.js"></script>
-<script src="js/inlanddiscount.js"></script>
+<script src="js/savemoney.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/inlanddiscount.css">
+  <link rel="stylesheet" href="css/discount.css">
 </head>
 <body>
 <div class="container">
@@ -30,11 +30,21 @@
           </a>
         </div>
       </div>
-   <div class="inland_dis">
-     <ul>
-<!--d动态渲染-->
-     </ul>
-   </div>
+<!--内容区域-->
+        <div class="cu-content">
+
+        </div>
+      <!--内容结束-->
+      <!--前往购买-->
+      <div class="golink">
+        <a href="#" target="_blank"><i class="icon-gobuy"></i>前往购买</a></div>
+      <!--微信图片-->
+      <div class="mmb_wechat">
+        <img src="images/mmbweixin2.png">
+      </div>
+      <div class="new_com">
+
+      </div>
       </div>
     </div>
   <!--底部-->
@@ -55,18 +65,27 @@
 </div>
 <script type="text/html" id="tpl">
   {{each result v i}}
-  <li class="border-img">
-    <a href="discount.html?productid={{v.productId}}" title="《皮囊》 19.9元">
-      <div class="img">
-       {{@v.productImg}}
-      </div>
-      <div class="title">{{v.productName}}</div>
-      <div class="subtit">{{v.productPrice}}</div>
-      <div class="info">
-        <div class="mall">{{v.productFrom}} | {{v.productTime}}</div>
-      </div>
-    </a>
-  </li>
+  <h3 class="title">
+    {{v.productFrom}}</h3>
+  <h4>{{v.productPrice}}</h4>
+  <div class="info">
+    <span class="mall">{{v.productFrom}}</span> <span class="addtime" style="margin-right: 4px;">{{v.productTime}}</span>
+                    <span class="author">{{v.productTips}}</span>
+  </div>
+  <div class="content mui-clearfix">
+    <div class="picwrap">
+      <img src="images/discount.jpg"></div>
+    <div class="conn">
+      <!--内容开始-->
+      <p>{{v.productInfo}}</p>
+      <p>{{@v.productImg}}</p>
+    </div>
+  </div>
+  {{/each}}
+</script>
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  {{@v.productComment}}
   {{/each}}
 </script>
 <script src="lib/jquery/jquery-1.12.4.min.js"></script>
@@ -76,6 +95,6 @@
 <script src="lib/lib-flexible/build/flexible_css.js"></script>
 <script src="lib/lib-flexible/src/flexible.js"></script>
 <script src="js/common.js"></script>
-<script src="js/inlanddiscount.js"></script>
+<script src="js/discount.js"></script>
 </body>
 </html>
