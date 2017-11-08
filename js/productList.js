@@ -56,6 +56,7 @@ function render(pageid) {
       pageid: pageid
     },
     success: function (data) {
+      console.log(data);
       $(".product_list").html(template("tpl1", data));
      totalPage = Math.ceil(data.totalCount / data.pagesize);
       // 给data添加属性

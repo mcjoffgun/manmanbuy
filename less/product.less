@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  a:hover, a:visited, a:focus, a:link {
+    text-decoration: none;
+    outline: none;
+  }
+;
+  .mmb_nav {
+    width: 100%;
+    height: 38/50rem;
+    background: linear-gradient(#FFFFFF, #ebebeb);
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #ccc;
+    padding-left: 10/50rem;
+    a {
+      //display: block;
+      height: 38/50rem;
+      font-size: 14/50rem;
+      color: #000;
+      line-height: 38/50rem;
+      &:last-child {
+        background-color: #d0d0d0;
+        float: right;
+        height: 28/50rem;
+        width: 60/50rem;
+        margin-right: 10/50rem;
+        margin-top: 5/50rem;
+        border-radius: 5/50rem;
+        line-height: 28/50rem;
+        text-align: center;
+
+      }
+    }
+
+  }
+  .mmb_footer{
+    position: absolute;
+    bottom:-120/50rem;
+    left:0;
+    width: 100%;
+    height: 94/50rem;
+    margin-top: 20/50rem;
+    border-top:1px solid #c4c4c4;
+    z-index: 999;
+    background-color: #efefef;
+    .footer_top a{
+      height: 30/50rem;
+      line-height: 30rem/50;
+      float: left;
+      width:33.33%;
+      text-align: center;
+      font-size: 14/50rem;
+      border-right:1px solid #c4c4c4;
+      border-bottom: 1px solid #c4c4c4;
+    }
+    .footer_top a:last-child{
+      border-right: none;
+    }
+    .footer_foot{
+      text-align: center;
+      width: 100%;
+      margin:10rem/50;
+      a:first-child{
+        color:red;
+        font-size: 14rem/50;
+      }
+      a:nth-child(2){
+        font-size: 14rem/50;
+      }
+      a:last-child{
+        font-size: 12rem/50;
+      }
+      p{
+        font-size: 14rem/50;
+      }
+    }
+  };
+.cate_details_wrapper{
+  width: 100%;
+  .cate_details{
+    width: 100%;
+    height: 370/50rem;
+    .details_title{
+      width: 100%;
+      height:200/50rem;
+      margin:0 auto;
+      padding-top: 16/50rem;
+      .title{
+        font-size: 17/50rem;
+        text-align: center;
+      }
+    }
+    .details_pic{
+      width: 90%;
+      height: 170/50rem;
+      margin:0 auto;
+      img{
+        width:170rem/50;
+        height:170rem/50;
+        margin:0 auto;
+      }
+    }
+  };
+ };
+  .cate_tab{
+    width: 100%;
+    height: 34/50rem;
+    border-top: solid 1px #c14d00;
+    border-bottom: 1px solid #c14d00;
+    li{
+      float: left;
+      width:33.33%;
+      line-height: 34px;
+      font-size: 15px;
+      text-align: center;
+      a{
+        color: #fff;
+        display: block;
+        height: 34px;
+        width: 100%;
+      }
+    }
+    .mtab{
+      //background-color: #ffbb00;
+
+      background: linear-gradient(#ffa632,orange);
+      border-right: #c14d00;
+      border-left:#ffd050;
+      a{
+
+      }
+    }
+    .cur{
+      background: linear-gradient(#ffd050,#ffbb00);
+
+    }
+    li:last-child{
+      //background-color: #ffbb00;
+      background: linear-gradient(#ffa632,#ff9000);
+    }
+  };
+  .cate_shop{
+    margin-top: 10/50rem;
+    width: 100%;
+    td:first-child{
+      img{
+        width:16/50rem;
+        height:16/50rem;
+      }
+    }
+   td:nth-child(2){
+  font-size:16/50rem;
+}
+   .red{
+     color: red;
+     font-size: 14/50rem;
+   }
+    .note{
+      font-size: 14/50rem;
+      color: #888;
+      padding: 8/50rem 10/50rem;
+      line-height: 18/50rem;
+      border-top: 2px solid #eee;
+
+    }
+    td:nth-child(4){
+      display: inline-block;
+      width: 56/50rem;
+      height: 24/50rem;
+      border-radius: 6/50rem;
+      text-align: center;
+      line-height: 24/50rem;
+      background-color: #ff5500;
+      color: #fff;
+      font-size: 14/50rem;
+    }
+    };
+  .product-com-title {
+         margin-top: 5px;
+         border-top: 4px solid #ccc;
+  div{
+    height: 34/50rem;
+    line-height: 34/50rem;
+    text-align: center;
+    overflow: hidden;
+    background: #dbdbdb;
+    font-size: 14px;
+    border-top: 1px solid #fff;
+    color: #333;
+  }
+       };
+  .comment_details_wrapper{
+    width: 100%;
+    margin-top: 5/50rem;
+    padding:0 5/50rem;
+    .comment_details{
+      width: 100%;
+      //height:140/50rem;
+      border-bottom: 1px solid #eee;
+      .com_user_date{
+        width: 100%;
+        height:18/50rem;
+        color: #666;
+         .com_user{
+           float: left;
+         }
+        .com_date{
+          float: right;
+        }
+      };
+      .com_from_shop{
+        width: 100%;
+        height:18/50rem;
+        span{
+          color: #666;
+          float: right;
+          font-size: 14/50rem;
+        }
+      };
+      .comment_details{
+        width: 100%;
+        color:black;
+        font-size: 14/50rem;
+      }
+    }
+  }
+  }
+
+@import "header";
+@import "search";
+@import "base";

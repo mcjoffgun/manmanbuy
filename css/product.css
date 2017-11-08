@@ -79,74 +79,143 @@
 .container .mmb_footer .footer_foot p {
   font-size: 0.28rem;
 }
-.container .banner_page {
+.container .cate_details_wrapper {
   width: 100%;
-  height: 2.04rem;
-  border-bottom: 1px solid #ccc;
-  padding: 0 0.2rem;
 }
-.container .banner_page a {
-  display: block;
+.container .cate_details_wrapper .cate_details {
   width: 100%;
-  height: 2.04rem;
+  height: 7.4rem;
 }
-.container .banner_page .pic_left {
-  width: 2.2rem;
-  height: 2rem;
-  float: left;
+.container .cate_details_wrapper .cate_details .details_title {
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+  padding-top: 0.32rem;
+}
+.container .cate_details_wrapper .cate_details .details_title .title {
+  font-size: 0.34rem;
+  text-align: center;
+}
+.container .cate_details_wrapper .cate_details .details_pic {
+  width: 90%;
+  height: 3.4rem;
   margin: 0 auto;
 }
-.container .banner_page .pic_left img {
-  width: 2rem;
-  height: 2rem;
+.container .cate_details_wrapper .cate_details .details_pic img {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin: 0 auto;
 }
-.container .banner_page .pic_right {
-  overflow: hidden;
+.container .cate_tab {
+  width: 100%;
+  height: 0.68rem;
+  border-top: solid 1px #c14d00;
+  border-bottom: 1px solid #c14d00;
 }
-.container .banner_page .pic_right .title {
-  height: 0.44rem;
-  color: #333;
-  font-size: 0.28rem;
-  line-height: 0.44rem;
-}
-.container .banner_page .pic_right .price {
-  margin-top: 0.5rem;
-  font-size: 0.36rem;
-  color: #ea3900;
-}
-.container .banner_page .pic_right span {
-  display: inline-block;
-  font-size: 0.24rem;
-  margin-right: 0.3rem;
-  margin-top: 0.1rem;
-}
-.container .pagenation {
-  width: 750px;
-  height: 0.7rem;
-  margin-top: 0.4rem;
-  float: left;
-}
-.container .pagenation span {
+.container .cate_tab li {
   float: left;
   width: 33.33%;
-}
-.container .pagenation span a {
-  display: block;
-  width: 1.64rem;
-  height: 0.66rem;
+  line-height: 34px;
+  font-size: 15px;
   text-align: center;
-  background: linear-gradient(#f1f1f1, #d4d4d4);
-  font-size: 0.28rem;
-  line-height: 0.64rem;
-  border-radius: 0.1rem;
-  margin: 0 auto;
 }
-.container .pagenation span .page_option {
-  width: 1.52rem;
-  height: 0.72rem;
-  border: 1px solid #ccc;
+.container .cate_tab li a {
+  color: #fff;
+  display: block;
+  height: 34px;
+  width: 100%;
+}
+.container .cate_tab .mtab {
+  background: linear-gradient(#ffa632, orange);
+  border-right: #c14d00;
+  border-left: #ffd050;
+}
+.container .cate_tab .cur {
+  background: linear-gradient(#ffd050, #ffbb00);
+}
+.container .cate_tab li:last-child {
+  background: linear-gradient(#ffa632, #ff9000);
+}
+.container .cate_shop {
+  margin-top: 0.2rem;
+  width: 100%;
+}
+.container .cate_shop td:first-child img {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.container .cate_shop td:nth-child(2) {
+  font-size: 0.32rem;
+}
+.container .cate_shop .red {
+  color: red;
   font-size: 0.28rem;
-  list-style: none!important;
+}
+.container .cate_shop .note {
+  font-size: 0.28rem;
+  color: #888;
+  padding: 0.16rem 0.2rem;
+  line-height: 0.36rem;
+  border-top: 2px solid #eee;
+}
+.container .cate_shop td:nth-child(4) {
+  display: inline-block;
+  width: 1.12rem;
+  height: 0.48rem;
+  border-radius: 0.12rem;
+  text-align: center;
+  line-height: 0.48rem;
+  background-color: #ff5500;
+  color: #fff;
+  font-size: 0.28rem;
+}
+.container .product-com-title {
+  margin-top: 5px;
+  border-top: 4px solid #ccc;
+}
+.container .product-com-title div {
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+  overflow: hidden;
+  background: #dbdbdb;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+  color: #333;
+}
+.container .comment_details_wrapper {
+  width: 100%;
+  margin-top: 0.1rem;
+  padding: 0 0.1rem;
+}
+.container .comment_details_wrapper .comment_details {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+.container .comment_details_wrapper .comment_details .com_user_date {
+  width: 100%;
+  height: 0.36rem;
+  color: #666;
+}
+.container .comment_details_wrapper .comment_details .com_user_date .com_user {
+  float: left;
+}
+.container .comment_details_wrapper .comment_details .com_user_date .com_date {
+  float: right;
+}
+.container .comment_details_wrapper .comment_details .com_from_shop {
+  width: 100%;
+  height: 0.36rem;
+}
+.container .comment_details_wrapper .comment_details .com_from_shop span {
+  color: #666;
+  float: right;
+  font-size: 0.28rem;
+}
+.container .comment_details_wrapper .comment_details .comment_details {
+  width: 100%;
+  color: black;
+  font-size: 0.28rem;
 }
 .mmb_header {
   width: 100%;
