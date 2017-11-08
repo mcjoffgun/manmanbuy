@@ -71,8 +71,9 @@
 </div>
 <script type="text/html" id="tpl">
   {{each result v i}}
-  <a href="#">
+
     <li class="money_ctr">
+      <a href="moneyproduct.html?productid={{v.productId}}" class="link_money">
       <div class="save_detail">
         <div class="pic_left">
           <a href="#">
@@ -94,8 +95,9 @@
           </div>
         </div>
       </div>
+      </a>
     </li>
-  </a>
+
   {{/each}}
 </script>
 <script type="text/html" id="tpl1">
