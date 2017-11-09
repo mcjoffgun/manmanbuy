@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>慢慢买省钱页</title>
+  <title>海淘折扣</title>
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/savemoney.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
 </head>
 <body>
 <div class="container">
@@ -38,17 +38,17 @@
       </div>
       <!--分页-->
       <div class="pagenation mui-clearfix">
-  <span class="prev_page">
-   <a href="#">上一页</a>
-    </span>
-  <span class="select_page">
-    <select class="page_option" id="page_option">
-     <!--动态渲染-->
-    </select>
-  </span>
-  <span class="next_page">
+        <span class="prev_page">
+          <a href="#">上一页</a>
+      </span>
+        <span class="select_page">
+          <select class="page_option" id="page_option">
+            <!--动态渲染-->
+         </select>
+        </span>
+      <span class="next_page">
      <a href="#">下一页</a>
-  </span>
+    </span>
       </div>
     </div>
   </div>
@@ -73,7 +73,7 @@
   {{each result v i}}
 
     <li class="money_ctr">
-      <a href="moneyproduct.html?productid={{v.productId}}" class="link_money">
+      <a href="moneyproduct.html?pageid=1" class="link_money">
       <div class="save_detail">
         <div class="pic_left">
           <a href="#">
@@ -113,6 +113,6 @@
 <script src="lib/lib-flexible/build/flexible_css.js"></script>
 <script src="lib/lib-flexible/src/flexible.js"></script>
 <script src="js/common.js"></script>
-<script src="js/savemoney.js"></script>
+<script src="js/moneyctrl.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ $(function () {
     success:function (data) {
       console.log(data);
       $(".save_content").html(template("tpl",data));
+      console.log(data);
       $(".new_com").html(template("tpl1",data));
     }
     })

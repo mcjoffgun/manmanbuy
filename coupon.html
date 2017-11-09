@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>白菜价</title>
+  <link  rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel = "stylesheet" href="css/bcj.css">
+</head>
+<body>
+<div class="container">
+  <div class="mui-scroll-wrapper">
+    <div class="mui-scroll">
+      <!--这里放置真实显示的DOM内容-->
+      <!--慢慢买头部-->
+      <div class="mmb_header mui-clearfix">
+        <div class="header_logo">
+          <a href="javascript:history.go(-1)">
+ <i class="fa fa-chevron-left "></i>
+          </a>
+        </div>
+        <div class="bcj_title">
+          <h4>白菜价-淘宝内部券</h4>
+        </div>
+        <div class="header_app">
+          <a href="#">
+            <img src="images/header_app.png">
+          </a>
+        </div>
+      </div>
+      <!--热销-->
+      <div class="hot_sale mui-clearfix">
+      <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted hot_sale_bor">
+        <div class="mui-scroll mui-clearfix">
+        <ul class="tabs mui-clearfix" >
+          <!--动态渲染-->
+        </ul>
+         </div>
+       </div>
+        <div class="nav_search mui-clearfix">
+          <img src="images/searchIcon.png">
+        </div>
+      </div>
+      <!--banner部分-->
+      <div class="banner_bcj mui-clearfix">
+        <!--动态渲染-->
+      </div>
+
+    </div>
+  </div>
+  <!--底部-->
+  <div class="mmb_footer">
+    <div class="footer_top ">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#">返回顶部</a>
+    </div>
+    <div class="footer_foot">
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上平价平台</a>
+      <p>m.manmanbuy.com  </p>
+    </div>
+  </div>
+  <div class="gotop">
+
+    <i class="fa fa-arrow-up"></i>
+
+  </div>
+</div>
+
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="mui-control-item " data-titleId={{v.titleId}}>
+    <a href="baicaijia.html?titleid=0" class="{{i === 0?'new':''}}" >{{v.title}}
+    </a></li>
+  {{/each}}
+</script>
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <div class="bcj_left">
+    <a href="#">
+     {{#v.productImg}}
+    </a>
+  </div>
+  <div class="bcj_right mui-clearfix">
+    <div class="bcj_name">{{@v.productName}}</div>
+    <div class="bcj_price">
+      <span class="price">{{@v.productPrice}}</span>
+      <span class="oldPrice">&yen;99</span>
+    </div>
+    <div class="bcj_process">
+      <span class="percent mui">1%</span>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <span class="get_num">{{@v.productCouponRemain}}</span>
+    </div>
+    <div class="bcj_discount_link mui-clearfix">
+      <div class="discount"><p>{{@v.productCoupon}}</p></div>
+      <div class="link">
+        <a href="#">下单链接</a>
+      </div>
+    </div>
+</div>
+  {{/each}}
+</script>
+<script src="lib/jquery/jquery-1.12.4.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/lib-flexible/build/flexible_css.js"></script>
+<script src="lib/lib-flexible/src/flexible.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bcj.js"></script>
+</body>
+</html>
