@@ -1,0 +1,392 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.container a:hover,
+.container a:visited,
+.container a:focus,
+.container a:link {
+  text-decoration: none;
+  outline: none;
+}
+.container .mmb_footer {
+  width: 100%;
+  height: 1.88rem;
+  margin-top: 0.4rem;
+  border-top: 1px solid #c4c4c4;
+  background-color: #efefef;
+}
+.container .mmb_footer .footer_top a {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-size: 0.28rem;
+  border-right: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.container .mmb_footer .footer_top a:last-child {
+  border-right: none;
+}
+.container .mmb_footer .footer_foot {
+  text-align: center;
+  width: 100%;
+  margin: 0.2rem;
+}
+.container .mmb_footer .footer_foot a:first-child {
+  color: red;
+  font-size: 0.28rem;
+}
+.container .mmb_footer .footer_foot a:nth-child(2) {
+  font-size: 0.28rem;
+}
+.container .mmb_footer .footer_foot a:last-child {
+  font-size: 0.24rem;
+}
+.container .mmb_footer .footer_foot p {
+  font-size: 0.28rem;
+}
+.container .gotop {
+  position: fixed;
+  right: 0.2rem;
+  bottom: 1.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.container .gotop i {
+  display: block;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.container .coupon_way {
+  width: 100%;
+  height: 0.32rem;
+}
+.container .coupon_way p {
+  font-size: 0.24rem;
+  text-align: center;
+  color: #999;
+  margin: 0.16rem 0;
+}
+.container .coupon_details {
+  width: 100%;
+  background-color: #fff;
+}
+.container .coupon_details li {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+.container .coupon_details li .pic_left {
+  width: 2rem;
+  height: 1.6rem;
+  float: left;
+  padding: 0 0.2rem;
+}
+.container .coupon_details li .pic_left img {
+  width: 2rem;
+  height: 1.6rem;
+}
+.container .coupon_details li .title_right {
+  position: relative;
+  padding: 0 0.2rem;
+  overflow: hidden;
+  margin-left: 0.2rem;
+}
+.container .coupon_details li .title_right i {
+  position: absolute;
+  right: 0.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.32rem;
+}
+.container .coupon_details li .title_right .title h3 {
+  margin: 0px;
+  padding: 0px;
+  word-break: break-all;
+  text-align: justify;
+  font-size: 0.28rem;
+  font-weight: normal;
+  color: #333333;
+  line-height: 0.4rem;
+}
+.container .coupon_details li .title_right .money {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #000;
+}
+.container .coupon_details li .delay {
+  font-size: 0.24rem;
+  color: #EE7700;
+  margin-top: 0.3rem;
+}
+.container .coupon_details a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container .mmb_mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.container .mmb_mask .mask_content {
+  width: 4.8rem;
+  height: 4.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .mmb_mask .mask_content .left,
+.container .mmb_mask .mask_content .right {
+  position: absolute;
+  top: 1.3rem;
+  width: 0.6rem;
+  height: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.1rem;
+}
+.container .mmb_mask .mask_content .left {
+  left: -0.7rem;
+}
+.container .mmb_mask .mask_content .right {
+  right: 0.12rem;
+}
+.container .mmb_mask .mask_content i {
+  position: absolute;
+  top: 0.26rem;
+  font-size: 0.36rem;
+  color: #ccc;
+}
+.container .mmb_mask .mask_content .fa-chevron-right {
+  right: 0.16rem;
+}
+.container .mmb_mask .mask_content .fa-chevron-left {
+  left: 0.16rem;
+}
+.container .mmb_mask .mask_content .banner {
+  width: 100%;
+  overflow: hidden;
+}
+.container .mmb_mask .mask_content .banner ul {
+  width: 500%;
+  transform: translateX(-20%);
+}
+.container .mmb_mask .mask_content .banner ul li {
+  float: left;
+  width: 20%;
+}
+.container .mmb_mask .mask_content .banner ul li img {
+  width: 4rem;
+  height: 3.2rem;
+}
+.mmb_header {
+  width: 100%;
+  height: 0.9rem;
+  background-color: #f4483e;
+  position: relative;
+}
+.mmb_header .header_logo,
+.mmb_header .header_app {
+  position: absolute;
+  width: 1rem;
+  height: 0.9rem;
+}
+.mmb_header .header_logo {
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.mmb_header .header_logo a {
+  display: block;
+  color: #fff;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 0.9rem;
+  font-weight: 100;
+}
+.mmb_header .header_app {
+  top: 0;
+  right: 0;
+}
+.mmb_header .header_app img {
+  width: 1rem;
+  height: 0.9rem;
+}
+.mmb_header .bcj_title {
+  height: 100%;
+  margin: 0 1rem;
+}
+.mmb_header .bcj_title h4 {
+  font-size: 0.4rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.9rem;
+  color: #fff;
+}
+.hot_sale {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #fff;
+  position: relative;
+}
+.hot_sale ul {
+  float: left;
+}
+.hot_sale ul li {
+  margin: 0 auto;
+}
+.hot_sale ul a {
+  display: block;
+  color: #333;
+  text-align: center;
+  font-size: 0.28rem;
+  border-bottom: 4px solid transparent;
+}
+.hot_sale .nav_search {
+  width: 0.76rem;
+  height: 0.76rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 1px solid #ccc;
+}
+.hot_sale .nav_search img {
+  width: 0.76rem;
+  height: 0.76rem;
+}
+.hot_sale .mui-scroll-wrapper .mui-scroll .tabs li a.new {
+  color: red;
+  border-bottom: 4px solid red;
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+/*去除边框*/
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: none;
+  outline-style: none;
+}
+/*禁止表单域缩放*/
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  /* 取消链接高亮  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  /*解决图片底部对其问题*/
+  display: block;
+  border: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+em,
+i {
+  font-style: normal;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+}

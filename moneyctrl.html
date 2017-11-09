@@ -46,9 +46,9 @@
             <!--动态渲染-->
          </select>
         </span>
-      <span class="next_page">
+  <span class="next_page">
      <a href="#">下一页</a>
-    </span>
+  </span>
       </div>
     </div>
   </div>
@@ -71,9 +71,8 @@
 </div>
 <script type="text/html" id="tpl">
   {{each result v i}}
-
     <li class="money_ctr">
-      <a href="moneyproduct.html?pageid=1" class="link_money">
+      <a href="moneyproduct.html?productid={{v.productId}}" class="link_money">
       <div class="save_detail">
         <div class="pic_left">
           <a href="#">
